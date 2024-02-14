@@ -22,7 +22,7 @@
   <div class="panel-body">
     <div class="event-listing">
       <a href="{{ url('event', e_slug=event.slug) }}">
-        <h1>{{ event.name }}</h1>
+        <h2>{{ event.name }}</h2>
         <span class="questions-counter">
           {{ event.questions.filter(is_accepted=True).count() }} questions asked<br>
           {% if display_moderation %}
